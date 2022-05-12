@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: grey;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2em;
+}
+.container {
+  /* width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; */
+  position: relative;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.slider {
+  width: 70rem;
+
+  display: flex;
+  /* width: 100%; */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.slide__img {
+  background-position: center center;
+  background-size: cover;
+  height: 50rem;
+  margin-bottom: 2rem;
+  width: 70rem;
+  flex: none;
+}
+.slide__img_1 {
+  background-image: url(./img/cover_6.jpg);
+}
+.slide__img_2 {
+  background-image: url(./img/photo_2021-10-04_23-58-17-2.jpg);
+}
+.slide__img_3 {
+  background-image: url(./img/28.jpg);
+}
+.slide__img_4 {
+  background-image: url(./img/vy-prodaete-rybov.jpg);
+}
+.slide__desc {
+  text-align: left;
+}
+.navigation {
+  display: flex;
+  gap: 0.5rem;
+}
+.navigation a {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+
+.navigation a span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid blue;
+  background-color: blue;
+  transition: all 0.3s;
+}
+.navigation a:hover span {
+  border-color: white;
+  background-color: white;
+}
+.navigation a.active span {
+  background: none;
+}
