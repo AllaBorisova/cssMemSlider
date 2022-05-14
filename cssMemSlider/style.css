@@ -5,7 +5,7 @@ html {
   font-size: 10px;
 }
 body {
-  background-color: grey;
+  background-color: black;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
@@ -20,14 +20,18 @@ body {
   position: relative;
   max-width: 70rem;
   margin: 0 auto;
+  padding-top: 40px;
 }
 .slider {
   width: 70rem;
-
   display: flex;
   /* width: 100%; */
   overflow-x: auto;
   scroll-behavior: smooth;
+  position: relative;
+}
+.slider::-webkit-scrollbar {
+  display: none;
 }
 .slide__img {
   background-position: center center;
@@ -36,6 +40,7 @@ body {
   margin-bottom: 2rem;
   width: 70rem;
   flex: none;
+  border-radius: 20px;
 }
 .slide__img_1 {
   background-image: url(./img/cover_6.jpg);
@@ -55,6 +60,9 @@ body {
 .navigation {
   display: flex;
   gap: 0.5rem;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 .navigation a {
   display: block;
@@ -77,6 +85,10 @@ body {
   border-color: white;
   background-color: white;
 }
-.navigation a.active span {
+.navigation a:active span {
+  border-color: grey;
+  background: grey;
+}
+.navigation a[href="#target"] span {
   background: none;
 }
