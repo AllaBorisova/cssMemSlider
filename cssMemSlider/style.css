@@ -12,11 +12,6 @@ body {
   line-height: 1.2em;
 }
 .container {
-  /* width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; */
   position: relative;
   max-width: 70rem;
   margin: 0 auto;
@@ -64,14 +59,7 @@ body {
   right: 0px;
   bottom: 0px;
   justify-content: flex-end;
-  /* margin-top: -2rem; */
-  /* position: relative; */
   z-index: 2;
-  /* position: fixed;
-  bottom: 0;
-  right: 50%;
-  margin-right: -35rem; */
-  /* transform: translate(30px, 20px); */
 }
 .navigation a {
   display: block;
@@ -101,9 +89,7 @@ body {
 .navigation a:active span {
   background: none;
 }
-/* .slide:target {
-  opacity: 0.8;
-} */
+
 #slide-1:target ~ .navigation a[href="#slide-1"] span {
   background: none;
 }
@@ -154,7 +140,6 @@ body {
   .navigation {
     width: 100%;
     bottom: 3rem;
-    /* margin-top: -5rem; */
     justify-content: center;
   }
 }
